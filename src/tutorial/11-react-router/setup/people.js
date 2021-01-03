@@ -10,13 +10,14 @@ const People = (id) => {
     return (<div>
         <h1> people page</h1>
         {
-            people.map((person)=>{
-               return(
+            people.map((person) => {
+                return (
                     <div key={person.id} className='border border-danger p-2 my-2 d-flex justify-content-between'>
                         <h4>{person.name}</h4>
                         <Link to={`/Person/${person.id}`}  >Learn more</Link>
                     </div>
-               );
+                    //console
+                );
             })
         }
     </div>);
